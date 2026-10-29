@@ -4,6 +4,8 @@
   const host = u => { try { return new URL(u).hostname.replace(/^www\./,""); } catch(e){ return "출처"; } };
   $("#upd").textContent = D.updated;
   $("#count-all").textContent = D.games.length;
+  const nIndie = D.games.filter(g => g.indie).length;
+  $("#count-indie").textContent = nIndie; $("#indie-n").textContent = nIndie;
   $("#event").innerHTML = D.event.map(([k,v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
   $("#ticket").href = D.sources.btc;
   const table = (cols, rows) => `<table><thead><tr>${cols.map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
@@ -17,15 +19,23 @@
   const tabs = ["전체", ...D.genres];
   const renderTabs = () => {
     $("#tabs").innerHTML = tabs.map(g => {
-      const n = g === "전체" ? D.games.length : D.games.filter(x => x.genre === g).length;
+      const pool = $("#indie").checked ? D.games.filter(x => x.indie) : D.games;
+      const n = g === "전체" ? pool.length : pool.filter(x => x.genre === g).length;
       return `<button class="tab${g===genre?" on":""}" role="tab" aria-selected="${g===genre}" data-g="${esc(g)}">${esc(g)}<span class="n">${n}</span></button>`;
     }).join("");
   };
   const badge = d => d === "시연" ? `<span class="b demo">▶ 시연 가능</span>` : d === "미확인" ? `<span class="b unk">시연 미확인</span>` : `<span class="b ev">${esc(d)}</span>`;
+  const GC = {"액션·RPG":["#ff3d9a","#7c5cff"],"전략·시뮬레이션":["#00b4d8","#2fe39a"],"어드벤처·캐주얼":["#ffb547","#ff3d9a"],"서브컬처·수집형":["#b388ff","#ff80ab"],"오픈월드·MMO·생존":["#00e0ff","#3d5afe"],"슈팅·레이싱·기타":["#ff6d00","#7c5cff"]};
+  const thumb = g => {
+    if (g.thumb) return `<div class="thumb"><img src="${esc(g.thumb)}" alt="${esc(g.name)}" loading="lazy" decoding="async" width="460" height="215"></div>`;
+    const [a,b] = GC[g.genre] || ["#7c5cff","#00e0ff"];
+    return `<div class="thumb ph" style="background:linear-gradient(135deg,${a},${b})" role="img" aria-label="${esc(g.name)} (이미지 없음)"><span>${esc(g.name)}</span></div>`;
+  };
   const card = g => `
-    <article class="card">
+    <article class="card${g.indie ? " is-indie" : ""}">
+      ${thumb(g)}
       <div><h3>${esc(g.name)}</h3>${g.en ? `<div class="en">${esc(g.en)}</div>` : ""}</div>
-      <div class="badges">${badge(g.demo)}<span class="b">${esc(g.genre)}</span></div>
+      <div class="badges">${badge(g.demo)}${g.indie ? `<span class="b indie">인디</span>` : ""}<span class="b">${esc(g.genre)}</span></div>
       <dl class="meta">
         <dt>회사</dt><dd>${esc(g.company)}</dd>
         <dt>장르</dt><dd>${esc(g.detail)}</dd>
@@ -34,15 +44,15 @@
       </dl>
       ${g.note ? `<p class="note">${esc(g.note)}</p>` : ""}
       <div class="links">
-        <a href="${esc(g.companyUrl)}" target="_blank" rel="noopener">회사 홈페이지</a>
+        ${g.companyUrl ? `<a href="${esc(g.companyUrl)}" target="_blank" rel="noopener">${esc(g.companyLabel || "회사 홈페이지")}</a>` : ""}
         ${g.gameUrl ? `<a href="${esc(g.gameUrl)}" target="_blank" rel="noopener">${esc(g.gameLabel)}</a>` : `<span>공식 페이지 없음</span>`}
         <a href="${esc(g.source)}" target="_blank" rel="noopener">출처 · ${esc(host(g.source))}</a>
       </div>
     </article>`;
   const render = () => {
-    const q = $("#q").value.trim().toLowerCase(), demo = $("#demo").checked;
-    const hit = D.games.filter(g => (genre === "전체" || g.genre === genre) && (!demo || g.demo === "시연") &&
-      (!q || [g.name,g.en,g.company,g.genre,g.detail,g.platform,g.booth,g.note].join(" ").toLowerCase().includes(q)));
+    const q = $("#q").value.trim().toLowerCase(), demo = $("#demo").checked, indie = $("#indie").checked;
+    const hit = D.games.filter(g => (genre === "전체" || g.genre === genre) && (!demo || g.demo === "시연") && (!indie || g.indie) &&
+      (!q || [g.name,g.en,g.company,g.genre,g.detail,g.platform,g.booth,g.note,g.indie?"인디 indie":"",g.zone].join(" ").toLowerCase().includes(q)));
     $("#result").textContent = `${hit.length}개 게임 표시 중`;
     if (!hit.length) { $("#list").innerHTML = `<p class="empty">조건에 맞는 게임이 없습니다. 필터를 바꿔 보세요.</p>`; return; }
     const groups = genre === "전체" ? D.genres : [genre];
@@ -54,5 +64,6 @@
   $("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (!b) return; genre = b.dataset.g; renderTabs(); render(); });
   $("#q").addEventListener("input", render);
   $("#demo").addEventListener("change", render);
+  $("#indie").addEventListener("change", () => { renderTabs(); render(); });
   renderTabs(); render();
 })();
