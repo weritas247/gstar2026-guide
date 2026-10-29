@@ -15,11 +15,26 @@
   $("#unc").innerHTML = D.unconfirmed.map(t => `<li>${esc(t)}</li>`).join("");
   $("#src").innerHTML = D.sourceList.map(([t,u]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("");
 
+  // 참가 업체 목록
+  const co = new Map();
+  D.games.forEach(g => { const k = g.company.trim(); const c = co.get(k) || {name:k, url:"", label:"", fb:false, n:0}; c.n++; if (!c.url && g.companyUrl) { c.url = g.companyUrl; c.label = g.companyLabel || "홈페이지"; c.fb = !!g.companyFallback; } co.set(k, c); });
+  const coArr = [...co.values()].sort((a,b) => a.name.localeCompare(b.name, "ko", {sensitivity:"base"}));
+  $("#co-n").textContent = `${coArr.length}곳`;
+  $("#coList").innerHTML = coArr.map(c => c.url
+    ? `<li><a href="${esc(c.url)}" target="_blank" rel="noopener" title="${esc(c.label)}"><span class="nm">${esc(c.name)}${c.fb ? `<span class="fbt">${esc(c.label)}</span>` : ""}</span><span class="ct">${c.n}개 게임 ↗</span></a></li>`
+    : `<li><a aria-disabled="true"><span class="nm">${esc(c.name)}</span><span class="ct">${c.n}개 게임</span></a></li>`).join("");
+
+  // 맨 위로 버튼
+  const tt = $("#toTop"); tt.hidden = false;
+  const onScroll = () => tt.classList.toggle("show", window.scrollY > 600);
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+  tt.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+
   let genre = "전체";
   const tabs = ["전체", ...D.genres];
   const renderTabs = () => {
     $("#tabs").innerHTML = tabs.map(g => {
-      const pool = $("#indie").checked ? D.games.filter(x => x.indie) : D.games;
+      const pool = $("#indieOnly").checked ? D.games.filter(x => x.indie) : D.games;
       const n = g === "전체" ? pool.length : pool.filter(x => x.genre === g).length;
       return `<button class="tab${g===genre?" on":""}" role="tab" aria-selected="${g===genre}" data-g="${esc(g)}">${esc(g)}<span class="n">${n}</span></button>`;
     }).join("");
@@ -37,20 +52,20 @@
       <div><h3>${esc(g.name)}</h3>${g.en ? `<div class="en">${esc(g.en)}</div>` : ""}</div>
       <div class="badges">${badge(g.demo)}${g.indie ? `<span class="b indie">인디</span>` : ""}<span class="b">${esc(g.genre)}</span></div>
       <dl class="meta">
-        <dt>회사</dt><dd>${esc(g.company)}</dd>
+        <dt>회사</dt><dd>${g.companyUrl ? `<a href="${esc(g.companyUrl)}" target="_blank" rel="noopener" title="${esc(g.companyLabel || "회사 홈페이지")}">${esc(g.company)}</a>` : esc(g.company)}</dd>
         <dt>장르</dt><dd>${esc(g.detail)}</dd>
         <dt>플랫폼</dt><dd>${esc(g.platform)}</dd>
         <dt>부스</dt><dd>${esc(g.booth)}</dd>
       </dl>
       ${g.note ? `<p class="note">${esc(g.note)}</p>` : ""}
       <div class="links">
-        ${g.companyUrl ? `<a href="${esc(g.companyUrl)}" target="_blank" rel="noopener">${esc(g.companyLabel || "회사 홈페이지")}</a>` : ""}
+        ${g.companyUrl ? `<a href="${esc(g.companyUrl)}" target="_blank" rel="noopener"${g.companyFallback ? ' class="fb"' : ""}>${esc(g.companyLabel || "회사 홈페이지")}</a>` : `<span class="nolink">회사 링크 미확인</span>`}
         ${g.gameUrl ? `<a href="${esc(g.gameUrl)}" target="_blank" rel="noopener">${esc(g.gameLabel)}</a>` : `<span>공식 페이지 없음</span>`}
         <a href="${esc(g.source)}" target="_blank" rel="noopener">출처 · ${esc(host(g.source))}</a>
       </div>
     </article>`;
   const render = () => {
-    const q = $("#q").value.trim().toLowerCase(), demo = $("#demo").checked, indie = $("#indie").checked;
+    const q = $("#q").value.trim().toLowerCase(), demo = $("#demo").checked, indie = $("#indieOnly").checked;
     const hit = D.games.filter(g => (genre === "전체" || g.genre === genre) && (!demo || g.demo === "시연") && (!indie || g.indie) &&
       (!q || [g.name,g.en,g.company,g.genre,g.detail,g.platform,g.booth,g.note,g.indie?"인디 indie":"",g.zone].join(" ").toLowerCase().includes(q)));
     $("#result").textContent = `${hit.length}개 게임 표시 중`;
@@ -58,12 +73,12 @@
     const groups = genre === "전체" ? D.genres : [genre];
     $("#list").innerHTML = groups.map(gn => {
       const items = hit.filter(g => g.genre === gn);
-      return items.length ? `<h3 class="genre">${esc(gn)} <small style="color:var(--sub);font-weight:500">${items.length}</small></h3><div class="cards">${items.map(card).join("")}</div>` : "";
+      return items.length ? `<h3 class="genre">${esc(gn)} <small>${items.length}</small></h3><div class="cards">${items.map(card).join("")}</div>` : "";
     }).join("");
   };
-  $("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (!b) return; genre = b.dataset.g; renderTabs(); render(); });
+  $("#tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if (!b) return; genre = b.dataset.g; const sx = $("#tabs").scrollLeft; renderTabs(); $("#tabs").scrollLeft = sx; render(); const on = $("#tabs .tab.on"); if (on && on.scrollIntoView) on.scrollIntoView({inline:"nearest", block:"nearest"}); const top = $("#games").getBoundingClientRect().top + window.scrollY; if (window.scrollY > top) window.scrollTo({top}); });
   $("#q").addEventListener("input", render);
   $("#demo").addEventListener("change", render);
-  $("#indie").addEventListener("change", () => { renderTabs(); render(); });
+  $("#indieOnly").addEventListener("change", () => { renderTabs(); render(); });
   renderTabs(); render();
 })();

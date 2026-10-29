@@ -2,7 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07070f">
 <title>지스타 2026 출품 게임 가이드</title>
 <meta name="description" content="지스타 2026(부산 벡스코, 11.19~22) 출품 게임을 장르별로 정리한 비공식 관람 가이드">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -17,7 +18,7 @@
     <h1>지스타 2026<br><span>출품 게임 가이드</span></h1>
     <p class="lead">11월 19일(목) ~ 22일(일) · 확인된 출품작 <b id="count-all">115</b>개(인디 <b id="count-indie">85</b>개 포함)를 장르별로 골라 보세요.</p>
     <nav class="jump">
-      <a href="#games">출품 게임</a><a href="#info">행사 정보</a><a href="#indie">인디 쇼케이스</a><a href="#tips">1인 개발자 팁</a><a href="#unconfirmed">미확인 정보</a>
+      <a href="#games">출품 게임</a><a href="#info">행사 정보</a><a href="#companies">참가 업체</a><a href="#indie">인디 쇼케이스</a><a href="#tips">1인 개발자 팁</a><a href="#unconfirmed">미확인 정보</a>
     </nav>
   </div>
 </header>
@@ -31,16 +32,24 @@
 
   <section id="games">
     <h2>출품 게임</h2>
-    <div class="controls">
-      <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="controls" id="controls">
       <div class="row">
-        <input id="q" type="search" placeholder="게임·회사·부스 검색 (예: 캡콤, E04, 협동)" aria-label="검색">
-        <label class="switch"><input type="checkbox" id="demo"><span class="slider"></span>시연 가능만</label>
-        <label class="switch"><input type="checkbox" id="indie"><span class="slider"></span>인디만 보기 <span class="n" id="indie-n"></span></label>
+        <input id="q" type="search" inputmode="search" enterkeyhint="search" placeholder="게임·회사·부스 검색 (예: 캡콤, E04)" aria-label="게임 검색">
+        <div class="toggles">
+          <label class="switch"><input type="checkbox" id="demo"><span class="slider"></span>시연 가능만</label>
+          <label class="switch"><input type="checkbox" id="indieOnly"><span class="slider"></span>인디만 <span class="n" id="indie-n"></span></label>
+        </div>
       </div>
-      <p class="result" id="result"></p>
+      <div class="tabs" id="tabs" role="tablist" aria-label="장르"></div>
+      <p class="result" id="result" aria-live="polite"></p>
     </div>
     <div id="list"></div>
+  </section>
+
+  <section id="companies" class="panel">
+    <h2>참가 업체 <small id="co-n"></small></h2>
+    <p class="hint">가나다·ABC 순 · 이름을 누르면 홈페이지(없으면 대체 링크)가 새 탭으로 열립니다.</p>
+    <ul id="coList" class="co-list"></ul>
   </section>
 
   <section class="panel">
@@ -72,6 +81,7 @@
 <footer class="wrap foot">
   <p>비공식 팬 가이드 · 데이터 기준일 <span id="upd"></span> · 공식 정보는 <a href="https://gstar.or.kr" target="_blank" rel="noopener">gstar.or.kr</a>에서 확인하세요.</p>
 </footer>
+<button id="toTop" class="to-top" aria-label="맨 위로" hidden>↑</button>
 <script src="data.js"></script>
 <script src="app.js"></script>
 </body>

@@ -565,8 +565,6 @@ window.GSTAR = {
    "name": "Ultrapool",
    "en": "",
    "company": "Icedrop Games",
-   "companyUrl": "https://ultrapool.gg",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "캐주얼 · 스포츠 · 전략",
    "platform": "PC (Windows·macOS)",
@@ -579,34 +577,35 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-ultrapool.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Icedrop%20Games",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Soul Breach",
    "en": "",
    "company": "Cosmic Spell, S.L.",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows) · 모바일 (Android)",
    "demo": "시연",
    "booth": "제2전시장 E01 인디 쇼케이스",
-   "gameUrl": "",
-   "gameLabel": "",
-   "note": "Selected Indie 시연존 · Steam 페이지 미확인",
+   "gameUrl": "https://www.soulbreach.com/",
+   "gameLabel": "게임 공식 사이트",
+   "note": "Selected Indie 시연존 · Steam 페이지 미확인 · 공식 사이트 soulbreach.com",
    "source": "https://www.thisisgame.com/articles/431484",
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-soul-breach.jpg",
-   "thumbSource": "지스타 공식 참가사 이미지"
+   "thumbSource": "지스타 공식 참가사 이미지",
+   "companyUrl": "https://www.cosmicspell.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Wilderings: The Lost Spring",
    "en": "",
    "company": "Kabam Games",
-   "companyUrl": "https://herobeatstudios.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows)",
@@ -619,14 +618,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-wilderings-the-lost-spring.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://herobeatstudios.com/",
+   "companyLabel": "개발사 홈페이지 (Herobeat Studios)"
   },
   {
    "name": "Crimson Furnace",
    "en": "",
    "company": "Dark Cocooning",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "캐주얼 · 시뮬레이션",
    "platform": "PC (Windows·macOS)",
@@ -639,14 +638,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-crimson-furnace.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/developer/DarkCocooning",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Hope in the City",
    "en": "",
    "company": "Lofty Sky Games",
-   "companyUrl": "https://hopeinthecitygame.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처",
    "platform": "PC (Windows)",
@@ -659,14 +659,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-hope-in-the-city.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://loftysky.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "모모 크래시",
    "en": "MOMO Crash",
    "company": "SKOOTA GAMES",
-   "companyUrl": "https://skoota.jp/games/momocrash/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "캐주얼",
    "platform": "PC (Windows)",
@@ -679,14 +679,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-momo-crash.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://skoota.jp/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "씨앗이 내려앉는 곳",
    "en": "Where the Seeds Fall",
    "company": "CygamesEdge",
-   "companyUrl": "https://cygames-edge.com/where_the_seeds_fall",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · 캐주얼",
    "platform": "PC (Windows·macOS)",
@@ -699,14 +699,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-where-the-seeds-fall.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://cygames-edge.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Island of Winds",
    "en": "",
    "company": "Parity Games",
-   "companyUrl": "https://esdigital.games",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처",
    "platform": "PC (Windows·macOS)",
@@ -719,14 +719,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-island-of-winds.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45317244",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Sky of Tides",
    "en": "",
    "company": "Lofty Sky Entertainment",
-   "companyUrl": "http://www.skyoftides.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "어드벤처 · 캐주얼 · RPG",
    "platform": "PC (Windows·macOS)",
@@ -739,14 +740,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-sky-of-tides.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://loftysky.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "THYSIASTERY 티지애스터리",
    "en": "THYSIASTERY",
    "company": "DIRGA",
-   "companyUrl": "https://www.thysiastery.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "RPG",
    "platform": "PC (Windows)",
@@ -759,14 +760,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-thysiastery.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.thysiastery.com",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Color Factory",
    "en": "",
    "company": "AIRang Studio",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "시뮬레이션",
    "platform": "PC (Windows)",
@@ -779,14 +781,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-color-factory.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=AIRang%20Studio",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Muroboros",
    "en": "",
    "company": "IvoryHand",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -799,14 +802,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-muroboros.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45598066",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Fighting Nations",
    "en": "Fighting Nations: The Iron Dragon Tournament",
    "company": "Deother",
-   "companyUrl": "https://de-other.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -819,14 +823,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-fighting-nations.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://de-other.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Dr. Degauss",
    "en": "",
    "company": "STUDIO ZP",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows·macOS)",
@@ -845,8 +849,6 @@ window.GSTAR = {
    "name": "Math Earth Defense",
    "en": "",
    "company": "ORAKASE",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "수학 디펜스 (모바일)",
    "platform": "모바일 (Android)",
@@ -865,8 +867,6 @@ window.GSTAR = {
    "name": "KILLA",
    "en": "",
    "company": "Black tangerine",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "어드벤처 · RPG · 시뮬레이션",
    "platform": "PC (Windows)",
@@ -879,14 +879,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-killa.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/46113823",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Backroom Cleaners",
    "en": "",
    "company": "Hypercent",
-   "companyUrl": "https://www.hypercent.co.kr/backroom-cleaners",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -899,14 +900,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-backroom-cleaners.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.hypercent.co.kr/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Prison Queen",
    "en": "",
    "company": "Sassy Bananas",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "RPG",
    "platform": "PC (Windows)",
@@ -919,14 +920,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-prison-queen.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://sassybananas.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Doubt 7 Days",
    "en": "",
    "company": "Taewoong Park",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -945,8 +946,6 @@ window.GSTAR = {
    "name": "Understander",
    "en": "",
    "company": "Studio Badak",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows)",
@@ -959,14 +958,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-understander.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Studio%20Badak",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Trolley Together",
    "en": "",
    "company": "MeMe Games",
-   "companyUrl": "https://memegames.dev",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "캐주얼 · 전략",
    "platform": "PC (Windows·macOS) · 모바일",
@@ -979,14 +979,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-trolley-together.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://memegames.dev/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Lucky Slot Car",
    "en": "",
    "company": "MonoFieldGames",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "캐주얼 · 레이싱 · 전략",
    "platform": "PC (Windows)",
@@ -999,14 +999,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-lucky-slot-car.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/46233319",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Floating - If You're Lost",
    "en": "",
    "company": "Studio RO",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -1025,8 +1026,6 @@ window.GSTAR = {
    "name": "Little Token",
    "en": "",
    "company": "VibeNex",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -1045,8 +1044,6 @@ window.GSTAR = {
    "name": "The Cardkov",
    "en": "",
    "company": "TeamCat",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -1065,8 +1062,6 @@ window.GSTAR = {
    "name": "어서오세요, 셰어하우스에!",
    "en": "Welcome to the Sharehouse!",
    "company": "Habom Studio",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "어드벤처 · 캐주얼 · 시뮬레이션",
    "platform": "PC (Windows)",
@@ -1079,14 +1074,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-welcome-to-the-sharehouse.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Habom%20Studio",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Synchronized Panic!",
    "en": "",
    "company": "BOMBTEA Games",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1099,14 +1095,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-synchronized-panic.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=BOMBTEA%20Games",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "보존계",
    "en": "Cold Case",
    "company": "BANJIHA GAMES",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows·macOS)",
@@ -1119,14 +1116,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-cold-case.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.banjihagames.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "잊혀진 서재",
    "en": "The Lost Study",
    "company": "SONAK: Story Design Project",
-   "companyUrl": "https://www.sonaksdp.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처",
    "platform": "PC (Windows·macOS) · 모바일",
@@ -1139,14 +1136,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-the-lost-study.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.sonaksdp.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "쿠산: 늑대들의 도시",
    "en": "Kusan: City of Wolves",
    "company": "CIRCLEfromDOT",
-   "companyUrl": "https://pqube.co.uk/games/kusan-city-of-wolves/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1159,14 +1156,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-kusan-city-of-wolves.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=CIRCLEfromDOT",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "풍비박산",
    "en": "Full Course Mayhem",
    "company": "Team DinoPower",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows·macOS)",
@@ -1179,14 +1177,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-full-course-mayhem.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Team%20DinoPower",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "COPY&PASTE",
    "en": "",
    "company": "KUMUHU",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -1205,8 +1204,6 @@ window.GSTAR = {
    "name": "Keycap Keycap!",
    "en": "",
    "company": "Kyuyu Games",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "캐주얼",
    "platform": "PC (Windows)",
@@ -1219,14 +1216,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-keycap-keycap.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/46616502",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "남모",
    "en": "NAMMO",
    "company": "Guild Studio Co., Ltd.",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows)",
@@ -1239,14 +1237,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-nammo.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45780363",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "스테퍼 레트로: 초능력 추리 퀘스트",
    "en": "Staffer Retro: A Supernatural Mystery Quest",
    "company": "Team Tetrapod",
-   "companyUrl": "https://www.tetrapod.company/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처",
    "platform": "PC (Windows)",
@@ -1259,14 +1258,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-staffer-retro-a-supernatural-mystery-quest.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.tetrapod.company/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "CODE EXIT",
    "en": "",
    "company": "Phase 8 Studio",
-   "companyUrl": "https://codeexit.line.games/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1279,14 +1278,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-code-exit.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://codeexit.line.games/",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Wonderdeck",
    "en": "",
    "company": "MukGames",
-   "companyUrl": "https://x.com/Wonderdeck_Muk",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "액션 · 전략",
    "platform": "PC (Windows)",
@@ -1299,14 +1299,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "Selected Indie 시연존",
    "thumb": "images/indie-wonderdeck.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://x.com/Wonderdeck_Muk",
+   "companyLabel": "게임 공식 X",
+   "companyFallback": true
   },
   {
    "name": "Homura Hime",
    "en": "",
    "company": "Crimson Dusk",
-   "companyUrl": "https://playism.com/en/game/homura-hime/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1319,14 +1320,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-homura-hime.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Crimson%20Dusk",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "스페이스 리볼버",
    "en": "Space Revolver",
    "company": "MKstudio",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1339,14 +1341,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-space-revolver.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=MKstudio",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "KIN:D Barabin's Expedition",
    "en": "",
    "company": "Antialiasing Corp.",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1359,14 +1362,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-kin-d-barabin-s-expedition.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Antialiasing%20Corp.",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Steel Maiden",
    "en": "",
    "company": "Keicee",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1379,14 +1383,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-steel-maiden.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/44828877",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Coffee Talk Tokyo",
    "en": "",
    "company": "Toge Productions",
-   "companyUrl": "https://chorusworldwide.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · 캐주얼 · RPG · 시뮬레이션 · 스포츠",
    "platform": "PC (Windows)",
@@ -1399,14 +1404,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-coffee-talk-tokyo.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://togeproductions.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Chop Chop Inc",
    "en": "Chop Chop Inc.",
    "company": "NullRef Entertainment",
-   "companyUrl": "https://www.rokaplay.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처",
    "platform": "PC (Windows)",
@@ -1419,14 +1424,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-chop-chop-inc.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/developer/nullrefentertainment",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "R.E.P.O.",
    "en": "",
    "company": "semiwork",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1439,14 +1445,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-r-e-p-o.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://semiwork.se/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Ignitement",
    "en": "",
    "company": "Sørb",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 캐주얼 · RPG",
    "platform": "PC (Windows)",
@@ -1459,14 +1465,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-ignitement.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=S%C3%B8rb",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "월드워V: 라스트콜",
    "en": "WorldWar V: Last Call",
    "company": "Studio HORANG",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1479,34 +1486,36 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-worldwar-v-last-call.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Studio%20HORANG",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Dungeon Magnate: Strategy Defense",
    "en": "",
    "company": "Brave Beginners",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "전략 디펜스",
    "platform": "PC (Windows)",
    "demo": "시연",
    "booth": "제2전시장 E01 인디 쇼케이스",
-   "gameUrl": "",
-   "gameLabel": "",
-   "note": "유니티 인디 시연존 · Steam 페이지 미확인",
+   "gameUrl": "https://apps.apple.com/kr/app/%EB%8D%98%EC%A0%84%EC%9D%98-%EC%A3%BC%EC%9D%B8-%EC%A0%84%EB%9E%B5-%EB%94%94%ED%8E%9C%EC%8A%A4/id6755654648",
+   "gameLabel": "App Store",
+   "note": "유니티 인디 시연존 · Steam 페이지 미확인 · App Store에 모바일판 등록(지스타 목록 표기는 PC)",
    "source": "https://www.thisisgame.com/articles/431484",
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-dungeon-magnate-strategy-defense.jpg",
-   "thumbSource": "지스타 공식 참가사 이미지"
+   "thumbSource": "지스타 공식 참가사 이미지",
+   "companyUrl": "https://bravebeginners.blogspot.com/",
+   "companyLabel": "개발사 블로그",
+   "companyFallback": true
   },
   {
    "name": "NIGHTMARE OPERATOR",
    "en": "",
    "company": "DDDistortion",
-   "companyUrl": "https://dddistortion-games.com/en#games",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1519,14 +1528,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-nightmare-operator.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://dddistortion-games.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "NightRunner",
    "en": "",
    "company": "314 Arts",
-   "companyUrl": "https://play.nightrunnergame.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1539,14 +1548,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-nightrunner.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.314arts.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Flamecraft (플레임크래프트)",
    "en": "Flamecraft",
    "company": "Monster Couch",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "캐주얼 · 전략",
    "platform": "PC (Windows)",
@@ -1559,14 +1568,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-flamecraft.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://monstercouch.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Box Knight",
    "en": "",
    "company": "We Made a Thing",
-   "companyUrl": "https://www.playboxknight.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1579,14 +1588,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-box-knight.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.playboxknight.com",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Canvas City",
    "en": "",
    "company": "Disc 2 Games",
-   "companyUrl": "https://disc2games.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "RPG · 전략",
    "platform": "PC (Windows)",
@@ -1599,14 +1609,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-canvas-city.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://disc2games.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Blackwood",
    "en": "BLACKWOOD",
    "company": "M7 Productions",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · RPG · 전략",
    "platform": "PC (Windows)",
@@ -1619,14 +1629,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-blackwood.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://attritom7.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Cave Expedition",
    "en": "",
    "company": "Moonmilk Games",
-   "companyUrl": "https://moonmilkgames.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "어드벤처 · 시뮬레이션",
    "platform": "PC (Windows)",
@@ -1639,14 +1649,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-cave-expedition.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.moonmilkgames.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Deep Dish Dungeon",
    "en": "",
    "company": "Behold Studios",
-   "companyUrl": "http://www.beholdstudios.com.br",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "액션 · 전략",
    "platform": "PC (Windows)",
@@ -1659,14 +1669,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-deep-dish-dungeon.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://beholdstudios.com.br/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Laira Cut Me Open",
    "en": "",
    "company": "EspaceshipStudio",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1679,14 +1689,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-laira-cut-me-open.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=EspaceshipStudio",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "스타더스트: 별과 마녀",
    "en": "STARDUST: Wish of Witch",
    "company": "Kniv Studio",
-   "companyUrl": "https://kniv.studio",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "RPG · 전략",
    "platform": "PC (Windows)",
@@ -1699,14 +1710,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-stardust-wish-of-witch.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://kniv.studio/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Operatives: Revolve",
    "en": "OPERATIVES: Revolve",
    "company": "Enigma Equations",
-   "companyUrl": "https://www.enigmaequation.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "전략",
    "platform": "PC (Windows)",
@@ -1719,14 +1730,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-operatives-revolve.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.enigmaequation.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Midwest 90: Rapid City",
    "en": "",
    "company": "Hidden Chest Studios",
-   "companyUrl": "https://www.hiddenchest.studio/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "시뮬레이션 · 전략",
    "platform": "PC (Windows)",
@@ -1739,14 +1750,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-midwest-90-rapid-city.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.hiddenchest.studio/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Glaciered",
    "en": "",
    "company": "Snowblind",
-   "companyUrl": "https://glaciered.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · RPG",
    "platform": "PC (Windows)",
@@ -1759,14 +1770,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-glaciered.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://glaciered.com/",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Mouse: P.I. For Hire",
    "en": "MOUSE: P.I. For Hire",
    "company": "Playside Studios",
-   "companyUrl": "https://www.mousethegame.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -1779,14 +1791,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-mouse-p-i-for-hire.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://playsidestudios.com/",
+   "companyLabel": "회사 홈페이지 (PlaySide)"
   },
   {
    "name": "WASD : 토리의 모험",
    "en": "WASD: 토리의 모험",
    "company": "EVNA games",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -1799,14 +1811,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-wasd.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45825328",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Tsuki Journey",
    "en": "",
    "company": "CloverJump",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "어드벤처 · 시뮬레이션",
    "platform": "PC (Windows)",
@@ -1819,14 +1832,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-tsuki-journey.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=CloverJump",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Tails & Talons",
    "en": "",
    "company": "RATH Games",
-   "companyUrl": "https://www.rathsoft.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "어드벤처 · 전략",
    "platform": "PC (Windows)",
@@ -1839,14 +1853,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-tails-talons.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.rathsoft.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "RIFTSTORM",
    "en": "",
    "company": "Confiction Labs",
-   "companyUrl": "https://www.playriftstorm.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · RPG",
    "platform": "PC (Windows)",
@@ -1859,14 +1873,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-riftstorm.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.playriftstorm.com/",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Travelling Light",
    "en": "",
    "company": "Studio IDUN",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
@@ -1879,14 +1894,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-travelling-light.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Studio%20IDUN",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "UnGodly",
    "en": "",
    "company": "Azra Games",
-   "companyUrl": "https://ungodlygame.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "RPG",
    "platform": "PC (Windows)",
@@ -1899,14 +1915,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "유니티 인디 시연존",
    "thumb": "images/indie-ungodly.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://azragames.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "보이드 다이버 : Escape from the Abyss",
    "en": "Void Diver",
    "company": "LoadComplete",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · RPG · 시뮬레이션",
    "platform": "PC (Steam)",
@@ -1919,14 +1935,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-void-diver.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.loadcomplete.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Badassgard",
    "en": "",
    "company": "THECOVE",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Steam)",
@@ -1939,14 +1955,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-badassgard.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=THECOVE",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "The Ashen OZ",
    "en": "",
    "company": "Ashbone Games",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Steam)",
@@ -1959,14 +1976,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-the-ashen-oz.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Ashbone%20Games",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Pilot 6174: 궤도 생존기",
    "en": "Pilot 6174: Orbital Survival",
    "company": "Kotge Astroworks Inc.",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "시뮬레이션 · 전략",
    "platform": "PC (Steam)",
@@ -1979,14 +1997,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-pilot-6174-orbital-survival.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Kotge%20Astroworks%20Inc.",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Lemegeton",
    "en": "",
    "company": "WILDPLAN",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처 · RPG",
    "platform": "PC (Steam)",
@@ -1999,14 +2018,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-lemegeton.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=%20WILDPLAN",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "INTERSCAPE",
    "en": "",
    "company": "ROOMTONE Games",
-   "companyUrl": "https://www.roomtonegames.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Steam)",
@@ -2019,14 +2039,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-interscape.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.roomtonegames.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Project Revenant",
    "en": "",
    "company": "MAYFLY",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Steam)",
@@ -2039,14 +2059,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-project-revenant.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45736984",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Demon Farm",
    "en": "Mystical Demon Farm",
    "company": "Jarikki Studio",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "액션·RPG",
    "detail": "어드벤처 · RPG · 시뮬레이션",
    "platform": "PC (Steam)",
@@ -2059,14 +2080,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "레드브릭하우스 존",
    "thumb": "images/indie-demon-farm.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45976215",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Cages: Hidden Worlds",
    "en": "",
    "company": "Big Loop Studios",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -2079,14 +2101,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-cages-hidden-worlds.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://bigloopstudios.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "꼬마 캡슐 수집가",
    "en": "Tiny Capsule Collector",
    "company": "Playing Mantis",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "전략·시뮬레이션",
    "detail": "캐주얼 · 시뮬레이션",
    "platform": "PC (Windows)",
@@ -2099,14 +2121,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-tiny-capsule-collector.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Playing%20Mantis",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Project Solar",
    "en": "",
    "company": "Imperial Playgrounds",
-   "companyUrl": "https://www.imperialplaygrounds.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -2119,14 +2142,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-project-solar.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.imperialplaygrounds.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Scigirl",
    "en": "SciGirl: The Internship",
    "company": "Sindex",
-   "companyUrl": "https://scigirlgame.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows)",
@@ -2139,14 +2162,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-scigirl.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://scigirlgame.com/",
+   "companyLabel": "게임 공식 사이트",
+   "companyFallback": true
   },
   {
    "name": "Covert Koalas",
    "en": "Covert Koalas: Phasco",
    "company": "Game Glis Studio",
-   "companyUrl": "https://gameglis.com/index.php/covert-koalas-phasco/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "어드벤처·캐주얼",
    "detail": "어드벤처 · 캐주얼",
    "platform": "PC (Windows)",
@@ -2159,14 +2183,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-covert-koalas.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://gameglis.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Gang of Frogs",
    "en": "",
    "company": "Aska Studios",
-   "companyUrl": "https://megabit-publishing.com/games/gang-of-frogs?utm_source=steam&utm_medium=gangoffrogs",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "전략·시뮬레이션",
    "detail": "액션 · 어드벤처 · 캐주얼 · 전략",
    "platform": "PC (Windows)",
@@ -2179,14 +2203,15 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-gang-of-frogs.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/search/?developer=Aska%20Studios",
+   "companyLabel": "Steam 개발사 작품 목록",
+   "companyFallback": true
   },
   {
    "name": "Brotato: Primal Dread",
    "en": "",
    "company": "Evil Empire",
-   "companyUrl": "https://blobfishgames.com/press/brotato/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 캐주얼 · RPG",
    "platform": "PC (Windows)",
@@ -2199,34 +2224,35 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-brotato-primal-dread.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://store.steampowered.com/curator/45271147",
+   "companyLabel": "개발사 Steam 페이지",
+   "companyFallback": true
   },
   {
    "name": "Redneck Zombie Hunter",
    "en": "",
    "company": "GoldKnights",
-   "companyUrl": "",
-   "companyLabel": "",
    "genre": "슈팅·레이싱·기타",
    "detail": "장르 미공개",
    "platform": "PC (Windows)",
    "demo": "시연",
    "booth": "제2전시장 E01 인디 쇼케이스",
-   "gameUrl": "",
-   "gameLabel": "",
-   "note": "EGDF(유럽게임개발자연합) 존 · Steam 페이지 미확인",
+   "gameUrl": "https://goldknights.org/redneck-zombie-hunter",
+   "gameLabel": "게임 소개 페이지",
+   "note": "EGDF(유럽게임개발자연합) 존 · Steam 페이지 미확인 · 개발사 사이트에 게임 소개",
    "source": "https://www.thisisgame.com/articles/431484",
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-redneck-zombie-hunter.jpg",
-   "thumbSource": "지스타 공식 참가사 이미지"
+   "thumbSource": "지스타 공식 참가사 이미지",
+   "companyUrl": "https://goldknights.org/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Hanno: A Magical Tale",
    "en": "",
    "company": "One Way Eleven",
-   "companyUrl": "https://www.onewayeleven.com",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션 · 어드벤처",
    "platform": "PC (Windows)",
@@ -2239,14 +2265,14 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-hanno-a-magical-tale.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://www.onewayeleven.com/",
+   "companyLabel": "개발사 홈페이지"
   },
   {
    "name": "Chosen by Odin",
    "en": "",
    "company": "Bedtime Digital",
-   "companyUrl": "http://chosenbyodin.com/",
-   "companyLabel": "개발사·공식 사이트",
    "genre": "액션·RPG",
    "detail": "액션",
    "platform": "PC (Windows)",
@@ -2259,7 +2285,9 @@ window.GSTAR = {
    "indie": true,
    "zone": "EGDF(유럽게임개발자연합) 존",
    "thumb": "images/indie-chosen-by-odin.jpg",
-   "thumbSource": "Steam"
+   "thumbSource": "Steam",
+   "companyUrl": "https://bedtime.io/",
+   "companyLabel": "개발사 홈페이지"
   }
  ],
  "pending": [
